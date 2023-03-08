@@ -1,0 +1,113 @@
+@use "../../styles" as *;
+
+.TestimonialCarousel {
+  .slick-prev {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+  }
+
+  .slick-next {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+  }
+
+
+  .slick-arrow::before {
+    opacity: 0 !important;
+    transition: $transition;
+  }
+
+  &:hover .slick-arrow::before {
+    opacity: 0.5 !important;
+  }
+  &__review-wrapper {
+    margin-bottom: 35px;
+  }
+
+  &__review-wrapper .slick-arrow::before {
+    font: var(--fa-font-solid);
+    font-size: 20px;
+    color: $secondColor;
+  }
+
+  &__review-wrapper .slick-arrow:hover::before {
+    color: $mainColor;
+    opacity: 1 !important;
+  }
+
+  &__review-wrapper .slick-prev::before {
+    content: "\f177";
+  }
+
+  &__review-wrapper .slick-next::before {
+    content: "\f178";
+  }
+
+  &__review {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: $secondColor;
+  }
+
+  &__picture-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  &__picture-wrapper .slick-arrow {
+    display: none !important;
+  }
+
+  &__picture-wrapper .slick-slide {
+    text-align: center !important;
+    cursor: pointer;
+  }
+
+  &__person-wrapper {
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  &__person-wrapper .slick-arrow {
+    display: none !important;
+  }
+
+  &__person-name {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  &__person-job {
+    font-size: 14px;
+    line-height: 21px;
+    color: $mainColor;
+  }
+
+  &__customer-img {
+    opacity: 0.7;
+    width: 85px !important;
+    transform: scale(0.9);
+    height: auto;
+    border-radius: 50%;
+    transition: $transition;
+  }
+
+  .slick-current img {
+    opacity: 1;
+    transform: scale(1);
+    transition: $transition;
+  }
+}
+
+@media (min-width: 1200px) {
+  .TestimonialCarousel {
+    &__review {
+      font-size: 25px;
+      line-height: 37.5px;
+    }
+  }
+}

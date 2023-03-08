@@ -1,0 +1,33 @@
+@use "../../styles" as *;
+
+.AboutSection {
+  padding-bottom: 50px;
+
+  &__heading {
+    font-size: 26px;
+    line-height: 31.2px;
+    margin: 12px 0 16px 0;
+  }
+
+  &__text {
+    line-height: 24px;
+  }
+
+  &__content > span {
+    letter-spacing: 2px;
+    color: $mainColor;
+  }
+
+  &__img {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .AboutSection {
+    &__heading {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+}

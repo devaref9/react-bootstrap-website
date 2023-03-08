@@ -1,0 +1,47 @@
+@use "../../styles" as *;
+
+.DemoSection {
+  padding: 50px 0;
+  overflow: hidden;
+
+  &__player {
+    width: 100% !important;
+    height: 273px !important;
+  }
+
+  .react-player__preview {
+    position: relative;
+    background-image: url("../../assets/images/video-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+  }
+
+  .react-player__preview::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  .react-player__shadow {
+    display: none !important;
+  }
+
+  .react-player__play-icon {
+    border-color: transparent transparent transparent $mainColor !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .DemoSection {
+    &__player {
+      height: 450px !important;
+    }
+  }
+}

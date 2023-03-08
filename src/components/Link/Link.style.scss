@@ -1,0 +1,13 @@
+@use "../../styles/" as *;
+
+.Link {
+  cursor: pointer;
+
+  &.primary > * {
+    transition: $transition;
+  }
+
+  &.primary > *:hover {
+    color: $mainColor !important;
+  }
+}

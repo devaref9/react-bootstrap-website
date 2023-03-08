@@ -1,0 +1,54 @@
+.ripple-1,
+.ripple-2,
+.ripple-3,
+.ripple-4,
+.ripple-5 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  animation-name: ripple;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+.ripple-1 {
+  animation-delay: 0;
+}
+
+.ripple-2 {
+  animation-delay: 1s;
+}
+
+.ripple-3 {
+  animation-delay: 2s;
+}
+
+.ripple-4 {
+  animation-delay: 3s;
+}
+
+.ripple-4 {
+  animation-delay: 4s;
+}
+
+.ripple-5 {
+  animation-delay: 5s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate3d(-50%, 50%, 0) scale(0);
+    opacity: 0.33;
+  }
+  100% {
+    transform: translate3d(-50%, 50%, 0) scale(350);
+    opacity: 0;
+  }
+}

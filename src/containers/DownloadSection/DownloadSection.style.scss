@@ -1,0 +1,47 @@
+.DownloadSection {
+  padding: 50px 0;
+
+  &__image img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+  }
+
+  &__content {
+    margin-top: 35px;
+  }
+
+  &__heading {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+
+  &__content > p {
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+
+  &__download {
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  &__download-img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .DownloadSection {
+    padding: 100px 0;
+    &__heading {
+      font-size: 45px;
+      line-height: 54px;
+    }
+
+    &__download-img {
+        max-width: 100%;
+    }
+  }
+}

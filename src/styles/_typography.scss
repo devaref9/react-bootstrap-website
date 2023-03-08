@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $blackColor !important;
+  font-weight: bold !important;
+  text-transform: capitalize !important;
+}
+
+p {
+  font-family: $optionalFont !important;
+  font-size: 15px !important;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 60px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 80px !important;
+  }
+
+  h2 {
+    font-size: 45px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+  }
+}

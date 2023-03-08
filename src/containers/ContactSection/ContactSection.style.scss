@@ -1,0 +1,38 @@
+@use "../../styles/" as *;
+
+.ContactSection {
+  padding: 50px 0;
+  &__img {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-control {
+    outline: 0;
+    height: 55px;
+    transition: $transition;
+    padding: 0 15px;
+  }
+
+  .input-control:focus {
+    border-color: $mainColor;
+    box-shadow: none;
+  }
+
+  .input-group textarea {
+    width: 100%;
+    padding-top: 15px;
+    height: auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ContactSection {
+    padding: 100px 0;
+  }
+}

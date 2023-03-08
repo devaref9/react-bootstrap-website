@@ -1,0 +1,26 @@
+@use "../../styles/" as *;
+
+.SocialIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $greyColor;
+  border-radius: 50%;
+  color: $whiteColor;
+  transition: $transition;
+
+  svg {
+    transition: $transition;
+  }
+
+  &:hover {
+    border-color: $mainColor;
+    background-color: $mainColor;
+
+    svg {
+      color: $whiteColor;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use "../../styles" as *;
+
+.FaqSection {
+  padding: 50px 0;
+
+  .accordion-item {
+    border: 0 !important;
+    background-color: #f3f3f3 !important;
+  }
+
+  .accordion-item:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .accordion-button {
+    background-color: #f3f3f3 !important;
+    color: black !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 25px 20px 20px 20px;
+    border: none !important;
+    box-shadow: none !important;
+    align-items: center;
+  }
+
+  .accordion-button::after {
+    display: flex;
+    align-items: center;
+    background: none !important;
+    font-weight: 500;
+    transform: none !important;
+  }
+
+  .accordion-button.collapsed::after {
+    font: var(--fa-font-solid);
+    content: "\2b";
+    font-size: 16px;
+  }
+
+  .accordion-button:not(.collapsed):after {
+    font: var(--fa-font-solid);
+    content: "\f068";
+    font-size: 16px;
+    color: $mainColor;
+  }
+
+  .accordion-body {
+    border-top: 1px solid $mainColor;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: $secondColor;
+    font-family: $optionalFont;
+  }
+}
+
+@media (min-width: 1200px) {
+  .FaqSection {
+    padding: 100px 0;
+  }
+}

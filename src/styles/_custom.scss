@@ -1,0 +1,7 @@
+$primary: $mainColor;
+$secondary: $secondColor;
+
+$font-family-base: $mainFont; //Customizing bootstrap default font
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

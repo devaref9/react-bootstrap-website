@@ -1,0 +1,13 @@
+.BlogList {
+  .row {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .BlogList {
+    .row {
+        column-gap: 0;
+    }
+  }
+}

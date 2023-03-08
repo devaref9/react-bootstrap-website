@@ -1,0 +1,18 @@
+@use "../../styles/" as *;
+
+.ProductAboutList {
+  &__item {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 12px !important;
+  }
+
+  &__item svg {
+    color: $mainColor;
+    font-size: 14px;
+    margin-right: 6px;
+  }
+}

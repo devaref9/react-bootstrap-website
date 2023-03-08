@@ -1,0 +1,70 @@
+@use "../../styles/" as *;
+
+.FeatureCard {
+  padding: 30px;
+  background-color: #fafafa;
+  position: relative;
+  z-index: 1;
+  transition: $transition;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &:hover &__title,
+  &:hover &__text {
+    color: $whiteColor !important;
+  }
+  &:hover &__icon-wrapper {
+    background-color: $whiteColor !important;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: $mainColor;
+    z-index: -1;
+    transition: $transition;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &__icon-wrapper {
+    background-color: #f3f3f3;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: $transition;
+  }
+  &__icon-wrapper svg {
+    font-size: 36px;
+    color: $mainColor;
+  }
+
+  &__title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    transition: $transition;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    transition: $transition;
+  }
+}

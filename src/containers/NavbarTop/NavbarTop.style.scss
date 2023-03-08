@@ -1,0 +1,61 @@
+@use "../../styles" as *;
+
+.navbar {
+  padding: 20px 0 !important ;
+  z-index: 999999;
+
+  &-brand {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    line-height: 42px !important;
+  }
+
+  &-collapse {
+    flex-grow: 0 !important;
+  }
+
+  &-toggler {
+    border-radius: 0.25rem !important;
+  }
+}
+
+.NavbarTop {
+  &__link {
+    font-weight: 600 !important;
+    color: $blackColor !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  &__link:hover {
+    color: $mainColor !important;
+    transition: $transition;
+  }
+}
+
+.hide {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  animation: show 0.8s;
+  transition: $transition;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+}
+
+@keyframes show {
+  0% {
+    top: -90px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .NavbarTop {
+    &__link {
+      margin: 0 14px !important;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@use "../../styles" as *;
+
+.VideoLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  padding: 50px 0 70px 0;
+
+  &__heading {
+    color: $whiteColor !important;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &__player-button {
+    position: relative;
+  }
+
+  &__icon-wrapper {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $whiteColor;
+    width: 90px;
+    height: 90px;
+    transition: $transition;
+  }
+
+  &__icon-wrapper svg {
+    z-index: 2;
+    color: $mainColor;
+    font-size: 50px;
+    display: flex;
+    transition: $transition;
+  }
+
+  &__icon-wrapper:hover {
+    background-color: $mainColor;
+
+    & svg {
+      color: $whiteColor;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .VideoLayout {
+    padding: 140px 0 150px 0;
+    &__heading {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}

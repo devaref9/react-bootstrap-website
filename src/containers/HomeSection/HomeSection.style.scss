@@ -1,0 +1,22 @@
+.HomeSection {
+  padding: 50px 0;
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .HomeSection {
+    padding: 150px 0;
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}

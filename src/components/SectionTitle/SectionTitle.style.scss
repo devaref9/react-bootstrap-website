@@ -1,0 +1,19 @@
+.SectionTitle {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  &__heading {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    line-height: 1.8 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .SectionTitle {
+    margin-bottom: 45px;
+
+  }
+}

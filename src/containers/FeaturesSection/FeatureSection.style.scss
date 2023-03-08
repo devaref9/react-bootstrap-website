@@ -1,0 +1,22 @@
+.FeatureSection {
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  & .row {
+    row-gap: 30px;
+  }
+
+  &__text {
+    line-height: 27px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .FeatureSection {
+    &__text {
+      margin-bottom: 45px;
+    }
+  }
+}
