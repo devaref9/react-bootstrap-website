@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { SectionTitle } from "../../components";
 import "./ContactSection.style.scss";
@@ -7,12 +7,13 @@ import ContactImg from "../../assets/images/book-contact.png";
 import { Btn } from "../../components";
 
 const ContactSection = () => {
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
-    <section className="ContactSection">
+    <section className="ContactSection" id="contact">
       <Container>
         <SectionTitle
           heading="get in touch with us"

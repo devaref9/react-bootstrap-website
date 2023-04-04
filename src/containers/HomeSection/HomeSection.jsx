@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./HomeSection.style.scss";
 import ProductBanner from "../../assets/images/products-banner.png";
@@ -6,7 +6,7 @@ import { Btn } from "../../components";
 
 const HomeSection = () => {
   return (
-    <section className="HomeSection bg-light">
+    <section className="HomeSection bg-light" id="home">
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>
@@ -17,9 +17,7 @@ const HomeSection = () => {
               We passion to work hard and deliver excellent results. It could
               solve the needs of your customers and develop innovation.
             </p>
-            <Btn className="mx-auto mx-lg-0 mb-4 mb-lg-2">
-              Buy Products
-            </Btn>
+            <Btn className="mx-auto mx-lg-0 mb-4 mb-lg-2">Buy Products</Btn>
           </Col>
 
           <Col lg={6} className="text-center text-lg-end">

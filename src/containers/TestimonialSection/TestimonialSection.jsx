@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { TestimonialCarousel } from "../";
@@ -6,7 +6,7 @@ import "./TestimonialSection.style.scss";
 
 const TestimonialSection = () => {
   return (
-    <section className="TestimonialSection">
+    <section className="TestimonialSection" id="testimonial">
       <Container>
         <SectionTitle
           heading="Customer feedback"

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./AboutSection.style.scss";
 import ProductsAbout from "../../assets/images/products-about.png";
 import ProductAboutList from "../../components/ProdcutAboutList/ProductAboutList";
 
 const AboutSection = () => {
+
   return (
-    <div className="AboutSection">
+    <section className="AboutSection" id="about">
       <Container>
         <Row className="align-items-center">
           <Col xs lg="6">
@@ -29,7 +30,7 @@ const AboutSection = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

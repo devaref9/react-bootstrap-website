@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { SectionTitle, PlaceholderCard } from "../../components";
 import { BlogList } from "../";
@@ -29,7 +29,7 @@ const BlogSection = () => {
 
   }, []);
   return (
-    <section className="BlogSection bg-light">
+    <section className="BlogSection bg-light" id="blog">
       <Container>
         <SectionTitle
           heading="our blog"

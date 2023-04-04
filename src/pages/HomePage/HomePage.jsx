@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavbarTop,
   HomeSection,
@@ -10,8 +10,9 @@ import {
   FaqSection,
   TestimonialSection,
   BlogSection,
+  ScrollToTop,
+  ContactSection,
 } from "../../containers";
-import ContactSection from "../../containers/ContactSection/ContactSection";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       <TestimonialSection />
       <BlogSection />
       <ContactSection />
+      <ScrollToTop />
     </div>
   );
 };

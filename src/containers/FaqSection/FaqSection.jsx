@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Accordion, Container } from "react-bootstrap";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import "../../assets/fontawesome-free-6.3.0-web/css/all.min.css";
@@ -6,7 +6,7 @@ import "./FaqSection.style.scss";
 
 const FaqSection = () => {
   return (
-    <div className="FaqSection bg-light">
+    <section className="FaqSection bg-light" id="faq">
       <Container>
         <SectionTitle
           heading="Asked Questions"
@@ -66,7 +66,7 @@ const FaqSection = () => {
           </Accordion.Item>
         </Accordion>
       </Container>
-    </div>
+    </section>
   );
 };
 

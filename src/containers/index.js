@@ -12,3 +12,5 @@ export { default as TestimonialSection } from "./TestimonialSection/TestimonialS
 export { default as WhyChooseSection } from "./WhyChooseSection/WhyChooseSection";
 export { default as BlogSection } from "./BlogSection/BlogSection";
 export { default as BlogList } from "./BlogList/BlogList";
+export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
+export { default as ContactSection } from "./ContactSection/ContactSection";

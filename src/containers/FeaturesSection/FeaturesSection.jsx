@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import FeatureCard from "../../components/FeatureCard/FeatureCard";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
@@ -15,8 +15,9 @@ import {
 } from "react-icons/fa";
 
 const FeaturesSection = () => {
+
   return (
-    <section className="FeatureSection">
+    <section className="FeatureSection" id="features">
       <Container>
         <SectionTitle
           heading="Product Features"

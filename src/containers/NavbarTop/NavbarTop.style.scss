@@ -4,10 +4,11 @@
   padding: 20px 0 !important ;
   z-index: 999999;
 
-  &-brand {
+  &-brand {                              
     font-size: 35px !important;
     font-weight: 700 !important;
     line-height: 42px !important;
+    cursor: pointer;
   }
 
   &-collapse {
@@ -30,6 +31,10 @@
   &__link:hover {
     color: $mainColor !important;
     transition: $transition;
+  }
+
+  &__link .active {
+    text-decoration: none;
   }
 }
 

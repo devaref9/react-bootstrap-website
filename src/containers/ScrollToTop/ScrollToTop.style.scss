@@ -1,0 +1,33 @@
+@use "../../styles/" as *;
+
+.ScrollToTop {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 35px;
+  bottom: 35px;
+  background-color: $blackColor;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainColor;
+    animation-name: moveUp;
+    animation-duration: $transition;
+  }
+
+  &__icon {
+    color: $whiteColor;
+    font-size: 25px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}

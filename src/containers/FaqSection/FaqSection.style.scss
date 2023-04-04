@@ -33,12 +33,16 @@
   }
 
   .accordion-button.collapsed::after {
+    transform: rotate(90deg) !important;
+    transition: $transition;
     font: var(--fa-font-solid);
     content: "\2b";
     font-size: 16px;
   }
 
   .accordion-button:not(.collapsed):after {
+    transform: rotate(180deg) !important;
+    transition: $transition;
     font: var(--fa-font-solid);
     content: "\f068";
     font-size: 16px;
@@ -58,5 +62,17 @@
 @media (min-width: 1200px) {
   .FaqSection {
     padding: 100px 0;
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+  }
+  // 50% {
+  //   transform: rotate(180);
+  // }
+  100% {
+    opacity: 1;
   }
 }
