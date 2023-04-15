@@ -19,12 +19,12 @@ Follow the following steps to get development environment running.
 
 - Clone ***Zebu SPA Website*** Repo
 
-> git clone https://github.com/devaref9/react-bootstrap-website.git
+> `git clone https://github.com/devaref9/react-bootstrap-website.git`
 
 - Install dependencies
 
-> npm install
+> `npm install`
 
 - Start development server
 
-> npm start
+> `npm start`
