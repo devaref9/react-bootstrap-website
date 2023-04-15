@@ -1,12 +1,8 @@
-# Zebu SPA Website
+# Zebu SPA Website  
 
----
+> ** Live Demo** https://react-bootstrap-website.vercel.app/
 
-> Live Demo: https://react-bootstrap-website.vercel.app/
-
-## Technologies Used
-
----
+ ## :wrench: Technologies Used
 
 > - React
 > - React-Bootstrap
