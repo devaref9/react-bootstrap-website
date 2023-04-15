@@ -17,7 +17,7 @@
 
 Follow the following steps to get development environment running.
 
-- Clone 'Zebu SPA Website' Repo
+- Clone ***Zebu SPA Website*** Repo
 
 > git clone https://github.com/devaref9/react-bootstrap-website.git
 
