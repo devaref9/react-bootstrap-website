@@ -1,11 +1,16 @@
-You can access live version of the project at: https://react-bootstrap-website.vercel.app/
+# Zebu SPA Website
 
-In the project directory, you can run:
+---
 
-### `npm start`
+> Live Demo: https://react-bootstrap-website.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+
+> - React
+> - React-Bootstrap
+> - Bootstrap
+> - Sass
+> - Axios
+> - Animate.css
