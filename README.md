@@ -1,6 +1,6 @@
 # Zebu SPA Website
 
-> **Live** **_Demo_** https://react-bootstrap-website.vercel.app/
+> **Live** **Demo** https://react-bootstrap-website.vercel.app/
 
 ## :wrench: Technologies Used
 
@@ -13,7 +13,7 @@
 - Axios
 - Animate.css
 
-## :bomb: Setup
+## :rocket: Setup
 
 Follow the following steps to get development environment running.
 
