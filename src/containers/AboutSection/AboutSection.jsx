@@ -10,7 +10,7 @@ const AboutSection = () => {
     <section className="AboutSection" id="about">
       <Container>
         <Row className="align-items-center">
-          <Col xs lg="6">
+          <Col xs="12" lg="6">
             <div className="AboutSection__content">
               <span>Watch</span>
               <h3 className="AboutSection__heading">About The Product</h3>
@@ -21,7 +21,7 @@ const AboutSection = () => {
               <ProductAboutList />
             </div>
           </Col>
-          <Col xs lg="6" className="text-center text-lg-end">
+          <Col xs="12" lg="6" className="text-center text-lg-end">
             <img
               className="AboutSection__img m-lg-0"
               src={ProductsAbout}

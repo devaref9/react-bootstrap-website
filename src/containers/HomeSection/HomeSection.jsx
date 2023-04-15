@@ -9,7 +9,7 @@ const HomeSection = () => {
     <section className="HomeSection bg-light" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col lg={6}>
+          <Col xs={12} lg={6}>
             <h1 className="text-center text-lg-start">
               Monitoring Your Daily Life
             </h1>
@@ -20,9 +20,9 @@ const HomeSection = () => {
             <Btn className="mx-auto mx-lg-0 mb-4 mb-lg-2">Buy Products</Btn>
           </Col>
 
-          <Col lg={6} className="text-center text-lg-end">
+          <Col xs={12} lg={6} className="text-center text-lg-end">
             <div className="mt-3 mt-lg-0">
-              <img src={ProductBanner} alt="product banner" />
+              <img src={ProductBanner} className="mw-100" alt="product banner" />
             </div>
           </Col>
         </Row>

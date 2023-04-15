@@ -2,6 +2,7 @@
 
 .ScrollToTop {
   position: fixed;
+  z-index: 99999;
   width: 45px;
   height: 45px;
   right: 35px;
@@ -10,24 +11,12 @@
   transition: $transition;
   cursor: pointer;
 
-  &:hover {
+  &__hover {
     background-color: $mainColor;
-    animation-name: moveUp;
-    animation-duration: $transition;
   }
 
   &__icon {
     color: $whiteColor;
     font-size: 25px;
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-15px);
   }
 }
